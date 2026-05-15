@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="政策通 — 社保、医保、公积金、失业金等办事流程，用人话讲清楚。每一步都告诉你带什么材料、去哪办、多久能办好。">
+<title>政策通 — 办事指南白话版</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">政策通<span>办事指南白话版</span></a>
+    <nav>
+      <a href="/">首页</a>
+      <a href="#hot">热门指南</a>
+      <a href="#all">全部分类</a>
+    </nav>
+  </div>
+</header>
+
+<section class="hero">
+  <h1>办事流程，用人话讲清楚</h1>
+  <p>社保、医保、公积金、失业金……每条指南都告诉你：需要什么材料、去哪裡办、多久能办好。</p>
+</section>
+
+<div class="search-wrap">
+  <div class="search-box">
+    <input type="text" id="searchInput" placeholder="搜你想办的事，比如「社保转移」「医保报销」" autocomplete="off">
+    <button onclick="doSearch()">搜索</button>
+  </div>
+</div>
+
+<section class="section" id="hot">
+  <h2 class="section-title">热门指南</h2>
+  <p class="section-sub">大家现在最常办的事</p>
+  <div class="guide-grid">
+    <a href="guides/shebao-zhuanyi.html" class="guide-card">
+      <span class="tag tag-shebao">社保</span>
+      <h3>社保跨省转移</h3>
+      <p>换城市工作了，社保怎么转到新城市？网上就能办，最快15个工作日。</p>
+    </a>
+    <a href="guides/yibao-baoxiao.html" class="guide-card">
+      <span class="tag tag-yibao">医保</span>
+      <h3>异地就医报销</h3>
+      <p>在外地看病怎么用医保报销？先备案、再就医、后结算，三步搞定。</p>
+    </a>
+    <a href="guides/gjj-tiqu.html" class="guide-card">
+      <span class="tag tag-gjj">公积金</span>
+      <h3>公积金提取</h3>
+      <p>租房、买房、还贷、离职……哪些情况能取公积金？材料清单+办理渠道。</p>
+    </a>
+    <a href="guides/shiyejin-shenling.html" class="guide-card">
+      <span class="tag tag-shebao">社保</span>
+      <h3>失业金申领</h3>
+      <p>被裁了怎么领失业金？每月能领多少钱、能领多久、手机就能办。</p>
+    </a>
+    <a href="guides/shebao-jiaofei.html" class="guide-card">
+      <span class="tag tag-shebao">社保</span>
+      <h3>灵活就业社保缴纳</h3>
+      <p>自由职业者、个体户怎么自己交社保？缴费基数怎么选最划算。</p>
+    </a>
+    <a href="guides/yibao-mendao.html" class="guide-card">
+      <span class="tag tag-yibao">医保</span>
+      <h3>门诊慢特病报销</h3>
+      <p>高血压、糖尿病等慢性病门诊怎么报销？申请流程和报销比例。</p>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="all">
+  <h2 class="section-title">全部分类</h2>
+  <p class="section-sub">按类别查找你需要办的业务</p>
+  <div class="cat-grid">
+    <a href="/guides/" class="cat-card">
+      <div class="cat-icon">🏥</div>
+      <div class="cat-name">社保</div>
+      <div class="cat-desc">养老、失业、工伤、社保转移、灵活就业参保</div>
+    </a>
+    <a href="/guides/" class="cat-card">
+      <div class="cat-icon">💊</div>
+      <div class="cat-name">医保</div>
+      <div class="cat-desc">报销、异地就医、门诊慢特病、医保卡使用</div>
+    </a>
+    <a href="/guides/" class="cat-card">
+      <div class="cat-icon">🏠</div>
+      <div class="cat-name">公积金</div>
+      <div class="cat-desc">提取、贷款、转移、查询余额</div>
+    </a>
+    <a href="/guides/" class="cat-card">
+      <div class="cat-icon">📋</div>
+      <div class="cat-name">户籍证件</div>
+      <div class="cat-desc">身份证、户口、居住证、护照、港澳通行证</div>
+    </a>
+    <a href="/guides/" class="cat-card">
+      <div class="cat-icon">🚗</div>
+      <div class="cat-name">交管</div>
+      <div class="cat-desc">驾照换证、车辆年检、违章处理、上牌</div>
+    </a>
+    <a href="/guides/" class="cat-card">
+      <div class="cat-icon">👶</div>
+      <div class="cat-name">生育育儿</div>
+      <div class="cat-desc">生育险报销、出生证明、新生儿落户、入学</div>
+    </a>
+    <a href="/guides/" class="cat-card">
+      <div class="cat-icon">📚</div>
+      <div class="cat-name">教育</div>
+      <div class="cat-desc">学籍、助学贷款、教师资格证、学历认证</div>
+    </a>
+    <a href="/guides/" class="cat-card">
+      <div class="cat-icon">🏡</div>
+      <div class="cat-name">不动产</div>
+      <div class="cat-desc">房产过户、房产证办理、契税、维修基金</div>
+    </a>
+  </div>
+</section>
+
+<section class="section" id="about" style="margin-bottom:64px">
+  <h2 class="section-title">关于政策通</h2>
+  <p class="section-sub">让每个人都能看懂办事流程</p>
+  <div style="max-width:680px;font-size:.95rem;color:var(--gray-700);line-height:1.8;">
+    <p>政府办事指南往往用词专业、流程复杂，读一遍可能还是一头雾水。</p>
+    <p style="margin-top:12px;"><strong>政策通</strong>做的事情很简单：把每条办事流程拆成「<strong>需要什么 → 去哪里办 → 多久办好 → 最省钱的办法</strong>」，用人话写出来，让每个人都能看懂、会操作。</p>
+    <p style="margin-top:12px;">目前内容还在持续完善中，如果找不到你想办的业务，可以给我们留言。</p>
+  </div>
+</section>
+
+<footer>
+  <p>政策通 · 办事指南白话版 &copy; 2025</p>
+  <p style="margin-top:6px">内容仅供参考，具体政策请以当地官方机构最新规定为准</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>

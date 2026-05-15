@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="公积金怎么提取？租房、买房、还贷、离职、退休……各种情况提取条件、所需材料、线上办理渠道，一次讲清楚。">
+<title>公积金提取 — 政策通</title>
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+
+<header>
+  <div class="header-inner">
+    <a href="/" class="logo">政策通<span>办事指南白话版</span></a>
+    <nav><a href="/">首页</a><a href="/#hot">热门指南</a></nav>
+  </div>
+</header>
+
+<div class="guide-hero">
+  <span class="tag tag-gjj">公积金</span>
+  <h1>公积金提取</h1>
+  <p class="update-time">更新于 2025 年 5 月 · 各地政策有差异</p>
+</div>
+
+<div class="breadcrumb">
+  <a href="/">首页</a> &rsaquo; 公积金 &rsaquo; 公积金提取
+</div>
+
+<div class="guide-content">
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-num">?</span>
+      一句话说清楚
+    </div>
+    <div class="step-body">
+      <p>公积金就是你工资里扣的那笔钱+单位给你交的，存在公积金账户里。租房、买房、还贷、离职、退休……很多情况都能把这笔钱取出来。现在大部分城市都支持<strong>手机上办理</strong>，不用跑柜台。</p>
+    </div>
+  </div>
+
+  <!-- 城市选择 -->
+  <div class="city-bar">
+    <label>选择城市查看具体政策：</label>
+    <select onchange="updateCityInfo(this, 'gjj')">
+      <option value="default">全国通用</option>
+      <option value="beijing">北京</option>
+      <option value="shanghai">上海</option>
+      <option value="guangzhou">广州</option>
+      <option value="shenzhen">深圳</option>
+      <option value="hangzhou">杭州</option>
+      <option value="chengdu">成都</option>
+      <option value="wuhan">武汉</option>
+    </select>
+    <span id="gjjLink" style="font-size:.85rem;color:var(--gray-500)">全国公积金查询：<a href="http://www.mohurd.gov.cn/" target="_blank" rel="noopener">住建部官网</a></span>
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-num">1</span>
+      租房提取（门槛最低）
+    </div>
+    <div class="step-body">
+      <p><strong>条件：</strong>本人及配偶在缴存城市无自有住房，正在租房。</p>
+      <p><strong>能取多少：</strong></p>
+      <ul>
+        <li>一般每季度或每年提取一次</li>
+        <li>额度各地不同：北京每月最高 2000 元，上海每月最高 3000 元，广州每月最高 1400 元</li>
+      </ul>
+      <p><strong>材料：</strong>通常只需身份证+银行卡。部分地区需提供租房合同或备案证明（越来越多城市已取消）。</p>
+      <p><strong>办理渠道：</strong>支付宝/微信搜"公积金"→ 租房提取，或本地公积金 App。</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-num">2</span>
+      买房提取（额度最大）
+    </div>
+    <div class="step-body">
+      <p><strong>条件：</strong>购买自住住房（新房、二手房均可）。</p>
+      <p><strong>能取多少：</strong></p>
+      <ul>
+        <li>一次性提取账户余额（保留一定最低余额）</li>
+        <li>购房合同备案后即可申请</li>
+      </ul>
+      <p><strong>材料：</strong></p>
+      <ul>
+        <li>身份证、结婚证（已婚）</li>
+        <li>购房合同或房产证</li>
+        <li>购房发票/契税完税证明</li>
+        <li>银行卡</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-num">3</span>
+      还房贷提取（最常用）
+    </div>
+    <div class="step-body">
+      <p><strong>条件：</strong>名下有住房贷款（公积金贷款或商业贷款均可）。</p>
+      <p><strong>能取多少：</strong></p>
+      <ul>
+        <li>每年提取一次，额度不超过当年还款总额</li>
+        <li>很多城市支持"按月对冲"：每月自动用公积金还贷款</li>
+      </ul>
+      <p><strong>材料：</strong>身份证、贷款合同、最近一期还款明细（首次办理）。后续年提一般只需要身份证。</p>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-num">4</span>
+      离职/退休提取（一次性取出）
+    </div>
+    <div class="step-body">
+      <p><strong>离职提取条件：</strong></p>
+      <ul>
+        <li>户口不在本市：离职后账户封存满 6 个月可提取</li>
+        <li>户口在本市：一般需失业满 2 年或符合其他条件（各地不同）</li>
+      </ul>
+      <p><strong>退休提取条件：</strong></p>
+      <ul>
+        <li>达到法定退休年龄，且账户已封存</li>
+        <li>可一次性提取全部余额，同时注销账户</li>
+      </ul>
+      <p><strong>材料：</strong>身份证、离职证明/退休证、银行卡。手机上一般直接办。</p>
+      <div class="tip-box">
+        <strong>重要提醒：</strong>离职后如果在新城市找到工作，不要直接提取！建议办理<strong>公积金转移</strong>（全国住房公积金小程序即可办理），把钱转到新城市继续使用。
+      </div>
+    </div>
+  </div>
+
+  <div class="step">
+    <div class="step-header">
+      <span class="step-num">5</span>
+      线上办理渠道汇总
+    </div>
+    <div class="step-body">
+      <ul>
+        <li><strong>全国住房公积金小程序</strong>（微信/支付宝搜）：查询、转移、部分城市的提取</li>
+        <li><strong>本地公积金 App/公众号</strong>：各城市自行运营，功能最全</li>
+        <li><strong>支付宝/微信城市服务</strong>：搜"公积金"</li>
+        <li><strong>12329 热线</strong>：咨询公积金相关问题</li>
+      </ul>
+    </div>
+  </div>
+
+  <h2 style="font-size:1.3rem;margin:40px 0 16px;">常见问题</h2>
+  <div class="faq-item">
+    <div class="faq-q">提取公积金会影响以后贷款额度吗？</div>
+    <div class="faq-a">会的。公积金贷款额度通常和账户余额挂钩（一般是余额的 10-20 倍）。如果你近期打算用公积金贷款买房，建议不要提取太多，保留一定余额。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">夫妻双方都能提取吗？</div>
+    <div class="faq-a">可以。租房提取双方都可以提（总额有上限），买房/还贷提取双方可以共同提取，总额不超过实际支出。</div>
+  </div>
+  <div class="faq-item">
+    <div class="faq-q">公积金一直不取会怎样？</div>
+    <div class="faq-a">钱一直在你账户里，按活期或一年期定期利率计息，不会消失。到退休时可以一次性连本带息全部取出。</div>
+  </div>
+
+</div>
+
+<footer>
+  <p>政策通 · 办事指南白话版 &copy; 2025</p>
+  <p style="margin-top:6px">内容仅供参考，具体政策请以当地官方机构最新规定为准</p>
+</footer>
+
+<script src="../script.js"></script>
+</body>
+</html>
